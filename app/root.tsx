@@ -7,6 +7,7 @@ import {
 } from "@remix-run/react";
 import { MedusaProvider } from "medusa-react";
 import { QueryClient } from "@tanstack/react-query"
+import './global.css'
 
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
