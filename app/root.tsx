@@ -8,6 +8,7 @@ import {
 import { MedusaProvider } from "medusa-react";
 import { QueryClient } from "@tanstack/react-query"
 import './global.css'
+import Navbar from './components/Navbar'
 
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
@@ -22,6 +23,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"></link>
       </head>
       <body>
+        <Navbar/>
         {children}
         <ScrollRestoration />
         <Scripts />
