@@ -5,7 +5,8 @@ import {
   Scripts,
   ScrollRestoration,
 } from "@remix-run/react";
-import "./tailwind.css";
+import { MedusaProvider } from "medusa-react";
+import { QueryClient } from "@tanstack/react-query"
 
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
@@ -25,6 +26,15 @@ export function Layout({ children }: { children: React.ReactNode }) {
   );
 }
 
+const queryClient = new QueryClient()
+
 export default function App() {
-  return <Outlet />;
+  return (
+    <MedusaProvider
+      queryClientProviderProps={{ client: queryClient }}
+      baseUrl="http://localhost:9000"
+    >
+      <Outlet />
+    </MedusaProvider>
+);
 }
