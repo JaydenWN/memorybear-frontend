@@ -2,6 +2,12 @@
     --color-blue : #CBEEF3;
     --color-orange-light: #FFA082;
     --color-orange: #F4440C;
+
+	--gutter-mobile: 0px 5px;
+	--gutter-tablet: 5% 10%;
+	--gutter-desktop: 5% 20%;
+	--max-content-size: 850px;
+    --box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.233);
 }
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,

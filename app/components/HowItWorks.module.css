@@ -1,0 +1,91 @@
+#how-container{
+    background: var(--color-orange-light);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#how-card-container{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin: 0px 5px;
+}
+
+
+h2, h3{
+    text-align: center;
+}
+h2{
+    margin: 15% 0px;
+    font-size: 2em;
+}
+
+
+
+.how-card{
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    gap: 25px;
+    flex-direction: column;
+
+    align-items: center;
+    padding: 10%;
+    box-shadow: var(--box-shadow);
+}
+
+.how-card p:first-of-type{
+    background-color: var(--color-orange);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: "DM Serif Display", serif;
+    font-size: 1.3em;
+}
+
+p{
+    text-align: center;
+}
+
+@media (width > 425px) {
+    #how-card-container{
+        margin: var(--gutter-tablet);
+    }
+    #how-container h2{
+       margin: 10% 0px;
+    }
+   
+    
+}
+
+
+@media (width >= 1024px){
+    #how-card-container{
+        gap: 15px;
+        flex-direction: row;
+        max-width: var(--max-content-size);
+        margin: 0px;
+    }
+    #how-content{
+        padding: 0px;
+    }
+    .how-card{
+        padding: 25px;
+        width: calc(100% / 3);
+    }
+
+    #how-container h2{
+        margin: 15% 0px;
+    }
+
+    #how-container{
+        padding-bottom: 10%;
+    }
+}
