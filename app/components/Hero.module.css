@@ -9,7 +9,7 @@
 
 #hero-card-img{
     width: 40%;
-    background-image: url('./bear.jpg');
+    background-image: url('../bear.jpg');
     background-size: cover;
     border-radius: 10px 0px 0px 10px;
 }
