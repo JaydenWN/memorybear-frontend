@@ -26,6 +26,7 @@ footer ul{
 
 #dev-link{
    align-self: center;
+   text-align: center;
 }
 
 @media (width > 425px){
