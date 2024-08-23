@@ -9,6 +9,7 @@ import { MedusaProvider } from "medusa-react";
 import { QueryClient } from "@tanstack/react-query"
 import './global.css'
 import Navbar from './components/Navbar'
+import Footer from './components/Footer'
 
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
@@ -27,6 +28,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         {children}
         <ScrollRestoration />
         <Scripts />
+        <Footer/>
       </body>
     </html>
   );

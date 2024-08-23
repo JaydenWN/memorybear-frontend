@@ -1,0 +1,37 @@
+footer{
+    background-color: #242424;
+    color: #7e7e7e;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    gap: 50px;
+}
+
+footer p{
+    font-weight: 800;
+    margin-bottom: 15px;
+    text-decoration: underline;
+}
+
+footer ul{
+    gap: 15px;
+    flex-direction: column;
+    align-items: start;
+}
+
+#footer-links{
+    display: flex;
+    justify-content: space-between;
+}
+
+#dev-link{
+   align-self: center;
+}
+
+@media (width > 425px){
+    #footer-links{
+        justify-content: left;
+        gap: 25%;
+        padding: 50px;
+    }
+}

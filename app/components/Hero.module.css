@@ -26,20 +26,20 @@
     padding: 8% 16%;
 }
 
-p{
+#hero-card-content-text p{
     line-height: 2em;
 }
 
-h2{
+#hero-card h2{
     font-size: 1.5em;
     margin-bottom: 25px;
 }
 
-button{
-    align-self: end;
+#hero-card button{
+   align-self: end;
     width: fit-content;
     padding: 10px 15px;
-    border: 1px solid transparent;
+    border: 1px dashed transparent;
     border-radius: 6px;
     background-color: var(--color-orange);
     color: white;
@@ -47,10 +47,10 @@ button{
     transition: all 0.2s;
 }
 
-button:hover{
+#hero-card button:hover{
     background-color: transparent;
     color: black;
-    border: 1px solid var(--color-orange)
+    border: 1px dashed var(--color-orange)
 }
 
 @media (width > 425px){

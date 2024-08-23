@@ -2,6 +2,7 @@ import type { MetaFunction } from "@remix-run/node";
 import Hero from '../components/Hero'
 import HowItWorks from '../components/HowItWorks'
 import CustomerStories from '../components/CustomerStories'
+import WhyUs from '../components/WhyUs'
 import styles from '../index.module.css'
 
 
@@ -19,6 +20,7 @@ export default function Index() {
       <Hero/>
       <HowItWorks/>
       <CustomerStories/>
+      <WhyUs/>
     </div>
   )
 

@@ -5,6 +5,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding-bottom: 25px;
 }
 
 #how-card-container{
@@ -15,10 +16,11 @@
 }
 
 
-h2, h3{
+#how-container h2, h3{
     text-align: center;
 }
-h2{
+
+#how-container h2{
     margin: 15% 0px;
     font-size: 2em;
 }
@@ -50,8 +52,9 @@ h2{
     font-size: 1.3em;
 }
 
-p{
+#how-container p{
     text-align: center;
+    line-height: 2em;
 }
 
 @media (width > 425px) {

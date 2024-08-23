@@ -1,0 +1,22 @@
+#customer-stories-container{
+    display: flex;
+    flex-direction: column;
+}
+
+#customer-stories-container h2{
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 10%;
+}
+
+@media (width > 425px){
+    #customer-stories-container{
+        margin: var(--gutter-tablet);
+    }
+}
+
+@media (width > 1024px){
+    #customer-stories-container{
+        margin: var(--gutter-desktop);
+    }
+}
